@@ -1,0 +1,9 @@
+form:
+  css:
+    theme:
+      assets/css/movies-form.css: {}
+  js:
+    assets/js/movies.form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

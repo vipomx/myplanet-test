@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+ 
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function movies_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if ($bundle == 'movies' && !empty($fields['field_release_date'])) {
+    $fields['field_release_date']->addConstraint('ReleaseTimeChecking');
+  }
+}

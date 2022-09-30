@@ -1,0 +1,6 @@
+.movies-form .field--name-field-title,
+.movies-form .field--name-field-release-date,
+.movies-form .field--name-field-genre {
+  display: inline-block;
+  margin-right: 10px;
+}
